@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/HelveticaNeueCyr-Black.ttf",
+      "sha1": "787547c8a27ad5d0b6e8f307612db0aa5e0ca8b6"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeueCyr-Bold.ttf",
+      "sha1": "c34e7ef0ef4e3da9f60786da2a276153f911382e"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeueCyr-Heavy.ttf",
+      "sha1": "0280c0b817fb9508e487f5722543fe19a12b135a"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeueCyr-Light.ttf",
+      "sha1": "8416fa413b8739b0a0e1d45e68912fa50d3cc4bd"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeueCyr-Medium.ttf",
+      "sha1": "644677e4587fd460f850c9ecda31715a74d5b615"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeueCyr-Roman.ttf",
+      "sha1": "4e132ca97861cfba2ba204c8e2f607cd1751e68f"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeueCyr-Thin.ttf",
+      "sha1": "e8004cb547c5e8663d89da9a0cd8e0858b535b8f"
+    },
+    {
+      "path": "src/assets/fonts/HelveticaNeueCyr-UltraLight.ttf",
+      "sha1": "7345fdecf62d1d68bea92262632a5a3a3b569d4a"
+    }
+  ]
+}

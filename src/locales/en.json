@@ -1,0 +1,9 @@
+{
+  "connectDevice": {
+    "thankYou": "Thank you for choosing OptySun",
+    "startWork": "Start working",
+    "notFound": "Unfortunately, the device was not found!",
+    "tryAgain": "Try again,\n or contact support",
+    "contactSupport": "Contact support"
+  }
+}
