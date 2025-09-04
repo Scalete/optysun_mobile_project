@@ -8,7 +8,13 @@ const RootStack = createNativeStackNavigator();
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <RootStack.Navigator screenOptions={{ headerShown: false }}>
+      <RootStack.Navigator
+        screenOptions={{
+          headerShown: false,
+          contentStyle: { backgroundColor: 'white' },
+          animation: 'fade',
+        }}
+      >
         <RootStack.Screen name="Intro" component={IntroStack} />
         <RootStack.Screen name="Registration" component={RegistrationsStack} />
       </RootStack.Navigator>

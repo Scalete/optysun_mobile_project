@@ -40,6 +40,38 @@ export const getGlobalStyles = () => {
       letterSpacing: RFValue(18) * (-7 / 100),
       ...text(Fonts.Roman, RFValue(18), RFValue(24), '#fff'),
     },
+    inputWrapper: {
+      gap: 5,
+    },
+    input: {
+      height: 58,
+      borderWidth: 1,
+      borderRadius: 10,
+      borderColor: '#EFEFEF',
+      paddingHorizontal: 22,
+      letterSpacing: RFValue(18) * (-7 / 100),
+      ...text(Fonts.Roman, RFValue(18), RFValue(24), '#202020'),
+    },
+    placeholderInputColor: {
+      color: '#EFEFEF',
+    },
+    inputEye: {
+      position: 'absolute',
+      right: 12,
+      top: 0,
+      bottom: 0,
+      justifyContent: 'center',
+    },
+    errorWrapper: {
+      marginLeft: 17,
+      gap: 10,
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    errorText: {
+      letterSpacing: RFValue(13) * (-7 / 100),
+      ...text(Fonts.Roman, RFValue(13), RFValue(24), '#BB0000'),
+    },
   });
 
   return globalStyles;

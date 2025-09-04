@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RegistrationStackList } from '@/types/navigation';
-import { RegistrationScreen } from '@/components';
+import { LoginScreen, RegistrationScreen, SignupScreen } from '@/components';
+import TestingHeader from '../shared/TestingHeader';
 
 const Stack = createNativeStackNavigator<RegistrationStackList>();
 
@@ -15,7 +16,23 @@ const RegistrationsStack = () => {
       <Stack.Screen
         name="RegistrationScreen"
         component={RegistrationScreen}
-        options={{ headerShown: false }}
+        options={{
+          header: () => <TestingHeader />,
+        }}
+      />
+      <Stack.Screen
+        name="LoginScreen"
+        component={LoginScreen}
+        options={{
+          header: () => <TestingHeader />,
+        }}
+      />
+      <Stack.Screen
+        name="SignupScreen"
+        component={SignupScreen}
+        options={{
+          header: () => <TestingHeader />,
+        }}
       />
     </Stack.Navigator>
   );

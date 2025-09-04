@@ -8,6 +8,8 @@ export type IntroStackList = {
 
 export type RegistrationStackList = {
   RegistrationScreen: undefined;
+  LoginScreen: undefined;
+  SignupScreen: undefined;
 };
 
 export type RootStackParamList = {

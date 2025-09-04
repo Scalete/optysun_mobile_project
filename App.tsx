@@ -4,7 +4,7 @@
  *
  * @format
  */
-import { Toast, Navigation } from '@/components';
+import { Toast, Navigation, ReduxView } from '@/components';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import { useEffect } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -22,10 +22,12 @@ function App() {
   }, []);
 
   return (
-    <SafeAreaProvider>
-      <Navigation />
-      <Toast />
-    </SafeAreaProvider>
+    <ReduxView>
+      <SafeAreaProvider>
+        <Navigation />
+        <Toast />
+      </SafeAreaProvider>
+    </ReduxView>
   );
 }
 

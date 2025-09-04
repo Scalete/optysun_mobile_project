@@ -7,6 +7,7 @@ export const getStyle = () => {
     },
     title: {
       marginTop: 'auto',
+      textAlign: 'center',
     },
     btnContainer: {
       marginTop: 'auto',
@@ -32,6 +33,11 @@ export const getStyle = () => {
     },
     buttonLoginText: {
       color: '#fff',
+    },
+    switch: {
+      position: 'absolute',
+      top: 10,
+      alignSelf: 'center',
     },
   });
 

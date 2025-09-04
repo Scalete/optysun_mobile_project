@@ -5,6 +5,7 @@ import {
   ConnectDeviceScreen,
   LoadingScreen,
 } from '@/components';
+import TestingHeader from '../shared/TestingHeader';
 
 const Stack = createNativeStackNavigator<IntroStackList>();
 
@@ -29,7 +30,9 @@ const IntroStack = () => {
       <Stack.Screen
         name="ConnectDeviceScreen"
         component={ConnectDeviceScreen}
-        options={{ headerShown: false }}
+        options={{
+          header: () => <TestingHeader />,
+        }}
       />
     </Stack.Navigator>
   );

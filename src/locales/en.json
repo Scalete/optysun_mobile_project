@@ -5,5 +5,32 @@
     "notFound": "Unfortunately, the device was not found!",
     "tryAgain": "Try again,\n or contact support",
     "contactSupport": "Contact support"
+  },
+  "registration": {
+    "chooseMethod": "Choose a sign-up method",
+    "createAccount": "Create an account",
+    "apple": "Continue with Apple",
+    "google": "Continue with Google",
+    "email": "Sign up with email",
+    "signup": "Sign up",
+    "login": "Log in",
+    "inputEmail": "Email",
+    "inputPassword": "Password",
+    "welcome": "Welcome back!",
+    "forgetPassword": "Forgot password?",
+    "emailRequired": "Email is required",
+    "invalidEmail": "Invalid email address",
+    "emailMax": "Email must be at most 50 characters",
+    "passwordRequired": "Password is required",
+    "passwordMin": "Password must be at least 6 characters",
+    "passwordMax": "Password must be at most 20 characters",
+    "passwordUppercase": "Password must contain at least one uppercase letter",
+    "passwordLowercase": "Password must contain at least one lowercase letter",
+    "passwordNumber": "Password must contain at least one number",
+    "passwordSpecialChar": "Password must contain at least one special character (!@#$%^&*)",
+    "acceptTerms": "I accept the",
+    "and": "and",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy"
   }
 }
