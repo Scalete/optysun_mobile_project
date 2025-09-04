@@ -11,4 +11,6 @@ export { default as LoadingScreen } from './screens/Intro/LoadingScreen';
 export { default as ChooseLanguageScreen } from './screens/Intro/ChooseLanguageScreen';
 export { default as ConnectDeviceScreen } from './screens/Intro/ConnectDeviceScreen';
 
+export { default as RegistrationScreen } from './screens/Authentification/RegistrationScreen';
+
 //ui

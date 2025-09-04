@@ -6,9 +6,11 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { IntroStackList } from '@/types/navigation';
 import i18n from '@/lib/i18n';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { getGlobalStyles } from '@/lib/styles';
 
 const ChooseLanguageScreen: FC = () => {
   const styles = useMemo(() => getStyle(), []);
+  const globalStyles = useMemo(() => getGlobalStyles(), []);
   const navigation = useNavigation<NativeStackNavigationProp<IntroStackList>>();
 
   const handleChangeLanguage = async (lang: 'en' | 'uk') => {
@@ -19,19 +21,25 @@ const ChooseLanguageScreen: FC = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Select your language{'\n'}Оберіть мову</Text>
+      <Text style={[globalStyles.title, styles.title]}>
+        Select your language{'\n'}Оберіть мову
+      </Text>
       <View style={styles.buttons}>
         <TouchableOpacity
-          style={styles.langBtn}
+          style={[globalStyles.mainButton, styles.langBtn]}
           onPress={() => handleChangeLanguage('en')}
         >
-          <Text style={styles.langBtnText}>English</Text>
+          <Text style={[globalStyles.mainButtonText, styles.langBtnText]}>
+            English
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={styles.langBtn}
+          style={[globalStyles.mainButton, styles.langBtn]}
           onPress={() => handleChangeLanguage('uk')}
         >
-          <Text style={styles.langBtnText}>Українська</Text>
+          <Text style={[globalStyles.mainButtonText, styles.langBtnText]}>
+            Українська
+          </Text>
         </TouchableOpacity>
       </View>
       <Text style={styles.additionalText}>

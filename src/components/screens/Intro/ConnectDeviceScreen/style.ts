@@ -12,9 +12,6 @@ export const getStyle = () => {
     },
     title: {
       marginBottom: 30,
-      textAlign: 'center',
-      letterSpacing: RFValue(24) * (-7 / 100),
-      ...text(Fonts.Roman, RFValue(24), RFValue(24), '#003ABB'),
     },
     additionalText: {
       textAlign: 'center',
@@ -22,20 +19,9 @@ export const getStyle = () => {
       ...text(Fonts.Roman, RFValue(18), RFValue(24), '#000000'),
     },
     button: {
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: '100%',
-      backgroundColor: '#003ABB',
-      borderRadius: 16,
-      height: 58,
-      paddingHorizontal: 10,
       marginTop: 24,
     },
-    buttonText: {
-      textAlign: 'center',
-      letterSpacing: RFValue(18) * (-7 / 100),
-      ...text(Fonts.Roman, RFValue(18), RFValue(24), '#fff'),
-    },
+    buttonText: {},
     failedText: {
       marginTop: 13,
       textAlign: 'center',

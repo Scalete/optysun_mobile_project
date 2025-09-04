@@ -10,9 +10,7 @@ export const getStyle = () => {
       justifyContent: 'center',
     },
     title: {
-      textAlign: 'center',
-      letterSpacing: RFValue(24) * (-7 / 100),
-      ...text(Fonts.Roman, RFValue(24), RFValue(24), '#1B1B1B'),
+      color: '#1B1B1B',
     },
     additionalText: {
       textAlign: 'center',
@@ -28,17 +26,10 @@ export const getStyle = () => {
       paddingHorizontal: 10,
     },
     langBtn: {
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: '100%',
       backgroundColor: '#F8F8F8',
-      borderRadius: 16,
-      height: 58,
     },
     langBtnText: {
-      textAlign: 'center',
-      letterSpacing: RFValue(18) * (-7 / 100),
-      ...text(Fonts.Roman, RFValue(18), RFValue(24), '#000000'),
+      color: '#000000',
     },
   });
 
