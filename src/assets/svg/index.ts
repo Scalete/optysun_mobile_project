@@ -5,3 +5,6 @@ export { default as GoogleSvg } from './Google';
 export { default as EmailSvg } from './Email';
 export { default as ErrorSvg } from './Error';
 export { default as EyeSvg } from './Eye';
+export { default as ArrowLeftSvg } from './ArrowLeft';
+export { default as GenderMale } from './GenderMale';
+export { default as GenderFemale } from './GenderFemale';

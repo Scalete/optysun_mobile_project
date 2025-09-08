@@ -26,6 +26,11 @@ export const getGlobalStyles = () => {
       letterSpacing: RFValue(24) * (-7 / 100),
       ...text(Fonts.Roman, RFValue(24), RFValue(24), '#003ABB'),
     },
+    commonText: {
+      textAlign: 'center',
+      letterSpacing: RFValue(13) * (-7 / 100),
+      ...text(Fonts.Roman, RFValue(13), RFValue(15), '#818181'),
+    },
     mainButton: {
       alignItems: 'center',
       justifyContent: 'center',
@@ -71,6 +76,18 @@ export const getGlobalStyles = () => {
     errorText: {
       letterSpacing: RFValue(13) * (-7 / 100),
       ...text(Fonts.Roman, RFValue(13), RFValue(24), '#BB0000'),
+    },
+    backButton: {
+      position: 'absolute',
+      top: 10,
+      left: 16,
+      borderWidth: 1,
+      borderColor: '#EFEFEF',
+      borderRadius: 10,
+      width: 48,
+      height: 48,
+      justifyContent: 'center',
+      alignItems: 'center',
     },
   });
 

@@ -31,6 +31,24 @@
     "acceptTerms": "I accept the",
     "and": "and",
     "terms": "Terms of Use",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "descriptionBlock": {
+      "title": "Tell us a little about yourself",
+      "text": "This information will help us better\nadjust <bold>your daily water intake.</bold>",
+      "inputName": "Name",
+      "next": "Next"
+    },
+    "genderBlock": {
+      "title": "Select your gender",
+      "text": "This information will help us better\nadjust <bold>your daily water intake.</bold>",
+      "male": "Male",
+      "female": "Female"
+    }
+  },
+  "verifyCode": {
+    "title": "Verify code",
+    "instruction": "Please enter the code we just sent to your email",
+    "didntReceive": "Didn’t receive OTP?",
+    "resend": "Resend code"
   }
 }

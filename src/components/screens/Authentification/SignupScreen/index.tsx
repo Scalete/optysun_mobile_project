@@ -9,6 +9,9 @@ import { Controller, useForm } from 'react-hook-form';
 import { ErrorSvg, EyeSvg } from '@/assets/svg';
 import { ShakeableInput } from '@/components';
 import BouncyCheckbox from 'react-native-bouncy-checkbox';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native';
+import { RegistrationStackList } from '@/types/navigation';
 
 type FormData = {
   email: string;
@@ -23,6 +26,8 @@ const SignupScreen: FC = () => {
 
   const passwordInputRef = useRef<TextInput>(null);
   const [showPassword, setShowPassword] = useState(false);
+  const navigation =
+    useNavigation<NativeStackNavigationProp<RegistrationStackList>>();
 
   const {
     control,
@@ -35,6 +40,7 @@ const SignupScreen: FC = () => {
 
   const onSubmit = (data: FormData) => {
     console.log('Form submitted:', data);
+    navigation.navigate('CodeScreen');
   };
 
   console.log(errors);

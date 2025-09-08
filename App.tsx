@@ -16,9 +16,7 @@ GoogleSignin.configure({
 
 function App() {
   useEffect(() => {
-    setTimeout(() => {
-      SplashScreen.hide();
-    }, 1000);
+    SplashScreen.hide();
   }, []);
 
   return (

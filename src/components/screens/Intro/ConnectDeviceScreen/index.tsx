@@ -49,7 +49,9 @@ const ConnectDeviceScreen: FC = () => {
       </Text>
       <EmptyBottleSvg />
 
-      <Text style={styles.failedText}>{t('connectDevice.tryAgain')}</Text>
+      <Text style={[globalStyles.commonText, styles.failedText]}>
+        {t('connectDevice.tryAgain')}
+      </Text>
       <TouchableOpacity
         style={[globalStyles.mainButton, styles.button]}
         onPress={() =>

@@ -24,9 +24,6 @@ export const getStyle = () => {
     buttonText: {},
     failedText: {
       marginTop: 13,
-      textAlign: 'center',
-      letterSpacing: RFValue(13) * (-7 / 100),
-      ...text(Fonts.Roman, RFValue(13), RFValue(15), '#818181'),
     },
     switch: {
       position: 'absolute',

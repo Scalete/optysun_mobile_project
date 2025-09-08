@@ -10,6 +10,8 @@ export type RegistrationStackList = {
   RegistrationScreen: undefined;
   LoginScreen: undefined;
   SignupScreen: undefined;
+  CodeScreen: undefined;
+  PersonnalInfoScreen: undefined;
 };
 
 export type RootStackParamList = {
