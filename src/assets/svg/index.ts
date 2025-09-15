@@ -8,3 +8,4 @@ export { default as EyeSvg } from './Eye';
 export { default as ArrowLeftSvg } from './ArrowLeft';
 export { default as GenderMale } from './GenderMale';
 export { default as GenderFemale } from './GenderFemale';
+export { default as CrossSvg } from './Cross';

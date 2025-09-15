@@ -6,10 +6,19 @@ import {
   LoadingScreen,
 } from '@/components';
 import TestingHeader from '../shared/TestingHeader';
+import { useNavigation } from '@react-navigation/native';
+import { useEffect } from 'react';
 
 const Stack = createNativeStackNavigator<IntroStackList>();
 
 const IntroStack = () => {
+  // const navigation = useNavigation();
+  // useEffect(() => {
+  //   navigation.navigate('Registration', {
+  //     screen: 'PersonnalInfoScreen',
+  //   });
+  // }, []);
+
   return (
     <Stack.Navigator
       screenOptions={{

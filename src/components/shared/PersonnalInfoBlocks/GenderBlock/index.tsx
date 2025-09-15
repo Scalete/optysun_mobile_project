@@ -7,6 +7,12 @@ import { useTranslation, Trans } from 'react-i18next';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { getStyle } from './style';
 import { GenderFemale, GenderMale } from '@/assets/svg';
+import { useAppDispatch } from '@/store/selectors';
+import {
+  setSex,
+  setStep,
+  UserParametersSteps,
+} from '@/store/user-parameters/slice';
 
 const DescriptionBlock: FC = () => {
   const styles = useMemo(() => getStyle(), []);
@@ -14,6 +20,12 @@ const DescriptionBlock: FC = () => {
   const { t } = useTranslation();
   const navigation =
     useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+  const dispatch = useAppDispatch();
+
+  const onPressGender = (gender: string) => {
+    dispatch(setSex(gender));
+    dispatch(setStep(UserParametersSteps.BIRTHDATE));
+  };
 
   return (
     <View style={styles.container}>
@@ -28,13 +40,19 @@ const DescriptionBlock: FC = () => {
         />
       </Text>
       <View style={styles.genderWrapper}>
-        <TouchableOpacity style={styles.genderItem}>
+        <TouchableOpacity
+          style={styles.genderItem}
+          onPress={() => onPressGender('male')}
+        >
           <GenderMale />
           <Text style={[globalStyles.mainButtonText, styles.genderText]}>
             {t('registration.genderBlock.male')}
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.genderItem}>
+        <TouchableOpacity
+          style={styles.genderItem}
+          onPress={() => onPressGender('female')}
+        >
           <GenderFemale />
           <Text style={[globalStyles.mainButtonText, styles.genderText]}>
             {t('registration.genderBlock.female')}

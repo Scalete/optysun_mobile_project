@@ -6,6 +6,8 @@ export const getStyle = () => {
   const styles = StyleSheet.create({
     container: {
       paddingHorizontal: 15,
+      marginTop: 'auto',
+      marginBottom: 'auto',
     },
     title: {
       marginBottom: 6,

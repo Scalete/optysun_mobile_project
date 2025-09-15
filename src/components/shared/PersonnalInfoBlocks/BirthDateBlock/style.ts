@@ -5,7 +5,6 @@ import { RFValue } from 'react-native-responsive-fontsize';
 export const getStyle = () => {
   const styles = StyleSheet.create({
     container: {
-      paddingHorizontal: 15,
       marginTop: 'auto',
       marginBottom: 'auto',
     },
@@ -18,8 +17,10 @@ export const getStyle = () => {
     boldText: {
       color: '#003ABB',
     },
-    input: {
-      marginBottom: 45,
+    birthDateBlock: {
+      alignItems: 'flex-start',
+      justifyContent: 'center',
+      marginHorizontal: 15,
     },
   });
 

@@ -43,6 +43,24 @@
       "text": "This information will help us better\nadjust <bold>your daily water intake.</bold>",
       "male": "Male",
       "female": "Female"
+    },
+    "birthDateBlock": {
+      "title": "Enter your date of birth",
+      "text": "This information will help us better\nadjust <bold>your daily water intake.</bold>",
+      "bottomSheetNext": "Next",
+      "bottomSheetDate": "Select date"
+    },
+    "weightBlock": {
+      "title": "What`s your weight?",
+      "text": "You can always change this later",
+      "bottomSheetNext": "Next",
+      "bottomSheetWeight": "Select weight"
+    },
+    "heightBlock": {
+      "title": "What`s your height?",
+      "text": "You can always change this later",
+      "bottomSheetNext": "Next",
+      "bottomSheetWeight": "Select Height"
     }
   },
   "verifyCode": {

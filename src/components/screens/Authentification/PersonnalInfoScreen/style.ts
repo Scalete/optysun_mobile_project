@@ -6,7 +6,6 @@ export const getStyle = () => {
   const styles = StyleSheet.create({
     container: {
       height: '100%',
-      justifyContent: 'center',
     },
     progress: {
       position: 'absolute',

@@ -43,6 +43,24 @@
       "text": "Ця інформація допоможе нам краще\nналаштувати <bold>ваш щоденний водний баланс.</bold>",
       "male": "Чоловік",
       "female": "Жінка"
+    },
+    "birthDateBlock": {
+      "title": "Введіть вашу дату народження",
+      "text": "Ця інформація допоможе нам краще\nналаштувати <bold>ваш щоденний водний баланс.</bold>",
+      "bottomSheetNext": "Далі",
+      "bottomSheetDate": "Оберіть дату"
+    },
+    "weightBlock": {
+      "title": "Яка у вас вага?",
+      "text": "Ви можете завжди змінити це пізніше",
+      "bottomSheetNext": "Далі",
+      "bottomSheetWeight": "Оберіть вагу"
+    },
+    "heightBlock": {
+      "title": "Яка ваша висота?",
+      "text": "Ви можете завжди змінити це пізніше",
+      "bottomSheetNext": "Далі",
+      "bottomSheetWeight": "Оберіть висоту"
     }
   },
   "verifyCode": {

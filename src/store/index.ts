@@ -24,7 +24,7 @@ const userParamsPersistConfig = {
 };
 
 const rootReducer = combineReducers({
-  user: persistReducer<IUserParametersState>(
+  userParameters: persistReducer<IUserParametersState>(
     userParamsPersistConfig,
     userParametersReducer,
   ),

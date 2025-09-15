@@ -4,6 +4,9 @@ export { default as AnimatedTextBlock } from './shared/AnimatedTextBlock';
 export { default as BubbleAnimation } from './shared/BubbleAnimation';
 export { default as DescriptionBlock } from './shared/PersonnalInfoBlocks/DescriptionBlock';
 export { default as GenderBlock } from './shared/PersonnalInfoBlocks/GenderBlock';
+export { default as BirthDateBlock } from './shared/PersonnalInfoBlocks/BirthDateBlock';
+export { default as WeightBlock } from './shared/PersonnalInfoBlocks/WeightBlock';
+export { default as HeightBlock } from './shared/PersonnalInfoBlocks/HeightBlock';
 
 //navigation
 export { default as Navigation } from './navigation';
@@ -24,3 +27,7 @@ export { default as ReduxView } from './templates/ReduxView';
 
 //ui
 export { default as ShakeableInput } from './ui/ShakeableInput';
+export { default as BottomSheet } from './ui/BottomSheet';
+export { default as SetBirthDatePicker } from './ui/SetBirthDatePicker';
+export { default as SetWeightPicker } from './ui/SetWeightPicker';
+export { default as SetHeightPicker } from './ui/SetHeightPicker';
