@@ -14,6 +14,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import userParametersReducer, {
   IUserParametersState,
 } from './user-parameters/slice';
+import questionnaireReducer, {
+  IQuestionnaireState,
+} from './questionnaire/slice';
 
 export type RootState = ReturnType<typeof rootReducer>;
 
@@ -23,10 +26,20 @@ const userParamsPersistConfig = {
   stateReconciler: autoMergeLevel2,
 };
 
+const questionnairePersistConfig = {
+  key: 'questionnaire',
+  storage: AsyncStorage,
+  stateReconciler: autoMergeLevel2,
+};
+
 const rootReducer = combineReducers({
   userParameters: persistReducer<IUserParametersState>(
     userParamsPersistConfig,
     userParametersReducer,
+  ),
+  questionnaire: persistReducer<IQuestionnaireState>(
+    questionnairePersistConfig,
+    questionnaireReducer,
   ),
 });
 

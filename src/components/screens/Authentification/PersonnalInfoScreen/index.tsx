@@ -99,9 +99,18 @@ const PersonnalInfoScreen: FC = () => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={globalStyles.backButton}>
-        <ArrowLeftSvg />
-      </TouchableOpacity>
+      {step !== UserParametersSteps.DESCRIPTION && (
+        <TouchableOpacity
+          style={globalStyles.backButton}
+          onPress={() => {
+            if (step > UserParametersSteps.DESCRIPTION) {
+              dispatch(setStep(step - 1));
+            }
+          }}
+        >
+          <ArrowLeftSvg />
+        </TouchableOpacity>
+      )}
       <View style={styles.progress}>
         <Bar
           progress={calculateProgress()}

@@ -6,3 +6,4 @@ export const useAppDispatch = () => useDispatch<AppDispatch>();
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 export const useUserParameters = () => useAppSelector(s => s.userParameters);
+export const useQuestionnaire = () => useAppSelector(s => s.questionnaire);
