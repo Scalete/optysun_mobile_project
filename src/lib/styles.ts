@@ -37,7 +37,7 @@ export const getGlobalStyles = () => {
       width: '100%',
       backgroundColor: '#003ABB',
       borderRadius: 16,
-      height: 58,
+      paddingVertical: 17,
       paddingHorizontal: 10,
     },
     mainButtonText: {

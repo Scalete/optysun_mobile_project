@@ -1,5 +1,5 @@
 import { getGlobalStyles } from '@/lib/styles';
-import { RootStackParamList } from '@/types/navigation';
+import { RegistrationStackList, RootStackParamList } from '@/types/navigation';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { FC, useCallback, useEffect, useMemo } from 'react';
@@ -31,7 +31,7 @@ const PersonnalInfoScreen: FC = () => {
   const globalStyles = useMemo(() => getGlobalStyles(), []);
   const { t } = useTranslation();
   const navigation =
-    useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+    useNavigation<NativeStackNavigationProp<RegistrationStackList>>();
   const { step } = useUserParameters();
   const dispatch = useAppDispatch();
 
@@ -86,7 +86,7 @@ const PersonnalInfoScreen: FC = () => {
           <BottomSheet
             titleText={`${t('registration.heightBlock.bottomSheetWeight')}`}
             onPressNext={() => {
-              // dispatch(setStep(UserParametersSteps.HEIGHT));
+              navigation.navigate('QuestionnaireScreen');
             }}
           >
             <SetHeightPicker />

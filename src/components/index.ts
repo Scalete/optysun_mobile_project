@@ -7,6 +7,7 @@ export { default as GenderBlock } from './shared/PersonnalInfoBlocks/GenderBlock
 export { default as BirthDateBlock } from './shared/PersonnalInfoBlocks/BirthDateBlock';
 export { default as WeightBlock } from './shared/PersonnalInfoBlocks/WeightBlock';
 export { default as HeightBlock } from './shared/PersonnalInfoBlocks/HeightBlock';
+export { default as RadioBlock } from './shared/RadioBlock';
 
 //navigation
 export { default as Navigation } from './navigation';
