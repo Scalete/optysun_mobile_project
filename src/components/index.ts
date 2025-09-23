@@ -21,6 +21,7 @@ export { default as SignupScreen } from './screens/Authentification/SignupScreen
 export { default as LoginScreen } from './screens/Authentification/LoginScreen';
 export { default as CodeScreen } from './screens/Authentification/CodeScreen';
 export { default as PersonnalInfoScreen } from './screens/Authentification/PersonnalInfoScreen';
+export { default as QuestionnaireScreen } from './screens/Authentification/QuestionnaireScreen';
 
 //templates
 export { default as ReduxView } from './templates/ReduxView';

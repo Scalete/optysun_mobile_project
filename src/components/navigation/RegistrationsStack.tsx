@@ -4,6 +4,7 @@ import {
   CodeScreen,
   LoginScreen,
   PersonnalInfoScreen,
+  QuestionnaireScreen,
   RegistrationScreen,
   SignupScreen,
 } from '@/components';
@@ -50,6 +51,13 @@ const RegistrationsStack = () => {
       <Stack.Screen
         name="PersonnalInfoScreen"
         component={PersonnalInfoScreen}
+        options={{
+          header: () => <TestingHeader />,
+        }}
+      />
+      <Stack.Screen
+        name="QuestionnaireScreen"
+        component={QuestionnaireScreen}
         options={{
           header: () => <TestingHeader />,
         }}
