@@ -13,6 +13,7 @@ export type RegistrationStackList = {
   CodeScreen: undefined;
   PersonnalInfoScreen: undefined;
   QuestionnaireScreen: undefined;
+  RulesScreen: undefined;
 };
 
 export type RootStackParamList = {

@@ -6,6 +6,7 @@ import {
   PersonnalInfoScreen,
   QuestionnaireScreen,
   RegistrationScreen,
+  RulesScreen,
   SignupScreen,
 } from '@/components';
 import TestingHeader from '../shared/TestingHeader';
@@ -58,6 +59,13 @@ const RegistrationsStack = () => {
       <Stack.Screen
         name="QuestionnaireScreen"
         component={QuestionnaireScreen}
+        options={{
+          header: () => <TestingHeader />,
+        }}
+      />
+      <Stack.Screen
+        name="RulesScreen"
+        component={RulesScreen}
         options={{
           header: () => <TestingHeader />,
         }}

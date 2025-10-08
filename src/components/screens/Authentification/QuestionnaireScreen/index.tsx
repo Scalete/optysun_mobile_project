@@ -9,13 +9,16 @@ import { setAnswer, setStep } from '@/store/questionnaire/slice';
 import RadioBlock from '@/components/shared/RadioBlock';
 import { useNavigation } from '@react-navigation/native';
 import { showError } from '@/lib/toast';
+import { RegistrationStackList } from '@/types/navigation';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 const QuestionnaireScreen: FC = () => {
   const styles = useMemo(() => getStyle(), []);
   const globalStyles = useMemo(() => getGlobalStyles(), []);
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
-  const navigation = useNavigation();
+  const navigation =
+    useNavigation<NativeStackNavigationProp<RegistrationStackList>>();
   const { step, answers } = useQuestionnaire();
 
   const [selected, setSelected] = useState<string | null>(
@@ -54,7 +57,7 @@ const QuestionnaireScreen: FC = () => {
     dispatch(setAnswer({ questionId: step, answer: selected }));
 
     if (isLastStep) {
-      navigation.navigate('ResultScreen' as never);
+      navigation.navigate('RulesScreen');
     } else {
       dispatch(setStep(step + 1));
       setSelected(answers[step + 1] || null);
@@ -63,7 +66,7 @@ const QuestionnaireScreen: FC = () => {
 
   const handleSkip = () => {
     if (isLastStep) {
-      navigation.navigate('ResultScreen' as never);
+      navigation.navigate('RulesScreen');
     } else {
       dispatch(setStep(step + 1));
       setSelected(answers[step + 1] || null);

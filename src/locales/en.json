@@ -96,5 +96,24 @@
     "instruction": "Please enter the code we just sent to your email",
     "didntReceive": "Didn’t receive OTP?",
     "resend": "Resend code"
+  },
+  "rules": {
+    "hello": "Hello!",
+    "letsGetAcquainted": "Let's get acquainted!",
+    "bottleDescription": "Your OptySun bottle is not just a container for water. It's a smart device that takes care of your health and the purity of your water every day.",
+    "whatCanBottleDo": "What can the bottle do?",
+    "uvDisinfection": "UV disinfection",
+    "uvDisinfectionDescription": "Purifies water and the inner surface of the bottle using safe ultraviolet light.",
+    "automaticAndManualModes": "Automatic and\nmanual modes",
+    "automaticAndManualModesDescription": "You choose whether to start disinfection manually or set a timer.",
+    "reminders": "Reminders",
+    "remindersDescription": "Receive gentle prompts to stay hydrated throughout the day. If the battery is low, the app will notify you in advance.",
+    "howToUse": "How to use",
+    "fillBottle": "Fill the bottle with water",
+    "chooseMode": "Choose a mode\naccording to your goals",
+    "doNotOpenLid": "Do not open the lid\nuntil it notifies you\nthat the process is complete",
+    "next": "Next",
+    "finish": "Get started",
+    "setupLater": "Set up later"
   }
 }
